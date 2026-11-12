@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block content %}<h2>Register device</h2><p class="text-secondary">Uses the local fictional TAC registry. No GSMA API is connected.</p>
+<div class="card shadow-sm form-card"><div class="card-body"><form method="post">
+<label class="form-label">15-digit IMEI</label><input class="form-control mb-3 font-monospace" name="imei" minlength="15" maxlength="15" pattern="[0-9]{15}" required placeholder="356789010000018">
+<label class="form-label">Initial status</label><select class="form-select mb-3" name="status"><option>GREYLISTED</option><option>WHITELISTED</option><option>BLACKLISTED</option></select>
+<label class="form-label">Notes</label><textarea class="form-control mb-3" name="notes" rows="3"></textarea>
+<button class="btn btn-primary">Validate and register</button> <a class="btn btn-outline-secondary" href="{{ url_for('devices') }}">Cancel</a>
+</form></div></div>{% endblock %}

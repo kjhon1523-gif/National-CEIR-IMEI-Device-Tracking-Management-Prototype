@@ -1,0 +1,9 @@
+body { background:#f4f6fa; color:#172033; }
+.navbar-brand { letter-spacing:.08em; }
+.card { border:1px solid #e8ebf1; border-radius: .8rem; }
+.card-header { border-bottom:1px solid #edf0f5; padding: .9rem 1rem; }
+.metric { min-height:112px; }
+.table th { font-size:.82rem; text-transform:uppercase; letter-spacing:.04em; color:#64748b; white-space:nowrap; }
+.table td { vertical-align:middle; }
+.form-card { max-width:680px; }
+.font-monospace { letter-spacing:.02em; }
